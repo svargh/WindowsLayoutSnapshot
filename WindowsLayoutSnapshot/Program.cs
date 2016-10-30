@@ -11,7 +11,9 @@ namespace WindowsLayoutSnapshot {
         static void Main() {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new TrayIconForm());
+            Console.Out.WriteLine("Press any key to continue!");
+            Console.ReadKey();
+            Application.Run(new TrayIconForm());            
         }
     }
 }
