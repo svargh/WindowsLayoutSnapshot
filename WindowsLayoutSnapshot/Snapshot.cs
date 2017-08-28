@@ -104,6 +104,8 @@ namespace WindowsLayoutSnapshot {
         }
 
         internal void Restore(object sender, EventArgs e) { // ignore extra params
+
+
             // first, restore the window rectangles and normal/maximized/minimized states
             foreach (var placement in m_placements) {
                 // this might error out if the window no longer exists
