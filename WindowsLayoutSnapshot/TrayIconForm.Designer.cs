@@ -29,7 +29,6 @@
             this.trayMenu = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.quitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.snapshotListEndLine = new System.Windows.Forms.ToolStripSeparator();
-            this.justNowToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.snapshotListStartLine = new System.Windows.Forms.ToolStripSeparator();
             this.clearSnapshotsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.snapshotToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -48,8 +47,7 @@
             // 
             this.trayMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.quitToolStripMenuItem,
-            this.snapshotListEndLine,
-            this.justNowToolStripMenuItem,
+            this.snapshotListEndLine,            
             this.snapshotListStartLine,
             this.clearSnapshotsToolStripMenuItem,
             this.snapshotToolStripMenuItem});
@@ -67,14 +65,7 @@
             // 
             this.snapshotListEndLine.Name = "snapshotListEndLine";
             this.snapshotListEndLine.Size = new System.Drawing.Size(155, 6);
-            // 
-            // justNowToolStripMenuItem
-            // 
-            this.justNowToolStripMenuItem.Name = "justNowToolStripMenuItem";
-            this.justNowToolStripMenuItem.Size = new System.Drawing.Size(158, 22);
-            this.justNowToolStripMenuItem.Text = "(Just now)";
-            this.justNowToolStripMenuItem.Click += new System.EventHandler(this.justNowToolStripMenuItem_Click);
-            this.justNowToolStripMenuItem.MouseEnter += new System.EventHandler(this.justNowToolStripMenuItem_MouseEnter);
+
             // 
             // snapshotListStartLine
             // 
@@ -118,7 +109,6 @@
         private System.Windows.Forms.ToolStripMenuItem quitToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator snapshotListEndLine;
         private System.Windows.Forms.ToolStripMenuItem clearSnapshotsToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem justNowToolStripMenuItem;
     }
 }
 
