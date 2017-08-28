@@ -1,19 +1,19 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
-
-namespace WindowsLayoutSnapshot {
-    static class Program {
-        /// <summary>
-        /// The main entry point for the application.
-        /// </summary>
-        [STAThread]
-        static void Main() {
-            Application.EnableVisualStyles();
+                                                                                          
+namespace WindowsLayoutSnapshot {                                                     
+    static class Program {                                                            
+        /// <summary>                                                                 
+        /// The main entry point for the application.                                 
+        /// </summary>                                                                
+        [STAThread]                                                                       
+        static void Main() {                                                              
+            Application.EnableVisualStyles();                                             
             Application.SetCompatibleTextRenderingDefault(false);
-            Console.Out.WriteLine("Press any key to continue!sxxxss");
-            Console.ReadKey();
-            Application.Run(new TrayIconForm());            
-        }
-    }
+            //Console.Out.WriteLine("Press any key to continue!sxxxss");                    
+            //Console.ReadKey();                                                            
+            Application.Run(new TrayIconForm());                                          
+        }                                                                      
+    }                                                                          
 }

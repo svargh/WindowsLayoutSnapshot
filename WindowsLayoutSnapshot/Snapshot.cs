@@ -5,6 +5,7 @@ using System.Reflection;
 using System.Runtime.InteropServices;
 using System.Text;
 using System.Windows.Forms;
+using WindowsDesktop;
 
 namespace WindowsLayoutSnapshot {
 
@@ -47,6 +48,30 @@ namespace WindowsLayoutSnapshot {
                 throw new Exception("Error getting window placement");
             }
             m_placements.Add(hwnd, placement);
+
+            Console.WriteLine("HWND: " + hwndInt + " |" + GetWindowText(hwndInt));
+            try
+            {
+                VirtualDesktop desktop = VirtualDesktop.FromHwnd(hwnd);
+
+                if (desktop == null)
+                {
+                    Console.WriteLine("No Desktop found for " + hwndInt);
+                }
+                else
+                {
+                    Console.WriteLine("DE#> " + desktop.Id);
+                }
+            }
+            catch (NullReferenceException e)
+            {
+                Console.WriteLine("2No Desktop found for " + hwndInt);
+            }
+
+        //    WindowsDesktop.Interop.ComObjects.ApplicationViewCollection.GetViewForHwnd(hWnd, out view);
+            //    VirtualDesktop[] cds =  VirtualDesktop.GetDesktops();
+            // Console.WriteLine("Desk account: " + cds.Length);
+            //   VirtualDesktopHelper.MoveToDesktop(hwnd, cds[0]);
 
             return true;
         }
@@ -251,5 +276,8 @@ namespace WindowsLayoutSnapshot {
         [DllImport("user32.dll")]
         private static extern int EnumWindows(EnumWindowsProc ewp, int lParam);
         private delegate bool EnumWindowsProc(int hWnd, int lParam);
+
+        [DllImport("User32.dll")]
+        public static extern string GetWindowText(int hWnd);
     }
 }

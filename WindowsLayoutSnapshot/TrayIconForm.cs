@@ -10,11 +10,12 @@ using System.Reflection;
 using System.Runtime.InteropServices;
 using System.Text;
 using System.Windows.Forms;
+using WindowsDesktop;
 
 namespace WindowsLayoutSnapshot {
 
     public partial class TrayIconForm : Form {
-
+  
         private Timer m_snapshotTimer = new Timer();
         private List<Snapshot> m_snapshots = new List<Snapshot>();
         private Snapshot m_menuShownSnapshot = null;
@@ -25,6 +26,7 @@ namespace WindowsLayoutSnapshot {
 
         public TrayIconForm() {
             InitializeComponent();
+
             Visible = false;
 
             m_snapshotTimer.Interval = (int)TimeSpan.FromMinutes(30).TotalMilliseconds;
