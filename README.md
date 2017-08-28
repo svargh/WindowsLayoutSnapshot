@@ -1,27 +1,24 @@
-WindowsLayoutSnapshot
-=====================
+------------
+#### This great software has been modified
+* The timer for automatic periodic snapshots has been removed 
+* Program argument for starting application with 2nd icon: WindowsLayoutSnapshot.exe /Use2ndIcon
+* Added feature: Remove snapshots manually by pressing Shift and clicking on snapshot
 
-Ever switch monitor configs on your laptop and all of your windows are squished down in size and in the wrong position?  Ever want to minimize all windows but save their layouts and min-max'ed states for later?
-
-WindowsLayoutSnapshot is a windows app to remember and restore window positions.
-
-If you don't want the source code, just download `WindowsLayoutSnapshot.exe`.  There's no installer; just put it in your Startup folder.
-
-The app takes a "snapshot" of your windows layouts every thirty minutes.  You can see the list of snapshots when you click on the tray menu icon.
-
-
-#### Tips
-* When there are many stored snapshots, all very recent ones are shown, plus more spaced-out but distant past snapshots.
-* Automatically taken snapshots are shown in normal text.  Manually taken snapshots (`Take Snapshot`) command are shown in **bold**.
-* As you mouse over each snapshot, it is restored, so it's easy to find the layout you want.
-* Snapshots keep track of, and restore, the "normal size" of windows even if they're currently minimized or maximized.
-* This app makes sure all windows fit inside a currently-visible display when restoring snapshots.  Because of that, if you ever have a window that's off-screen because of a bug in other software, just restore the "(Just now)" snapshot.
-* Snapshots are not stored across app instances (or, thus, restarts).
+The periodic snapshot causes flickering virtual desktops and 
+switch to the virtual desktop where the unity mode vmware applications are located.
+So before detaching the laptop from the dockingstation, I run manually the snapshot.
 
 
-#### Screenshot
-<img src="https://raw.github.com/adamsmith/WindowsLayoutSnapshot/master/screenshot.png" />
+I am using my Windows 10 laptop in three enviroments:
+* At Home:       Laptop attached to dockingstation which is connected to six   FullHD monitors.
+* At Office:     Laptop attached to dockingstation which is connected to three FullHD monitors.
+* In the train:  Laptop-only 
 
 
-#### License
-This app and its source code are released into the public domain.
+ToDos/Features to Add:
+* The VirtualDesktop number of each window should be stored&restored, too
+  After reattaching to a dockingstation, some applications (e.g. Chrome) do not stay in their assigned virtual desktop.
+  Those windows have to be manually moved back to the virtual desktop.
+  See also http://stackoverflow.com/questions/31801402/api-for-windows-10-virtual-desktops
+  
+------------

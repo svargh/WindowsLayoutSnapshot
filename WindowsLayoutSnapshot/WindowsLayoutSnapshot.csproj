@@ -97,8 +97,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="monitor-window-3d-shadow.ico" />
-    <None Include="Resources\ssss.ico" />
-    <None Include="Resources\trayIcon.Icon.ico" />
     <None Include="Resources\trayIcon.Icon1.ico" />
     <None Include="Resources\trayIcon.Icon2.ico" />
     <None Include="Resources\glyphicons_086_display.png" />
