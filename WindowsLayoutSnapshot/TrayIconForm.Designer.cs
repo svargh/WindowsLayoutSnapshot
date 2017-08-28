@@ -42,17 +42,18 @@
             this.trayIcon.Text = "Window Layout Backup";
             this.trayIcon.Visible = true;
             this.trayIcon.MouseClick += new System.Windows.Forms.MouseEventHandler(this.trayIcon_MouseClick);
+            this.trayIcon.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.trayIcon_MouseDoubleClick);
             // 
             // trayMenu
             // 
             this.trayMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.quitToolStripMenuItem,
-            this.snapshotListEndLine,            
+            this.snapshotListEndLine,
             this.snapshotListStartLine,
             this.clearSnapshotsToolStripMenuItem,
             this.snapshotToolStripMenuItem});
             this.trayMenu.Name = "contextMenuStrip1";
-            this.trayMenu.Size = new System.Drawing.Size(159, 126);
+            this.trayMenu.Size = new System.Drawing.Size(159, 82);
             // 
             // quitToolStripMenuItem
             // 
@@ -65,7 +66,6 @@
             // 
             this.snapshotListEndLine.Name = "snapshotListEndLine";
             this.snapshotListEndLine.Size = new System.Drawing.Size(155, 6);
-
             // 
             // snapshotListStartLine
             // 
