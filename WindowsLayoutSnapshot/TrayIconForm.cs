@@ -31,11 +31,11 @@ namespace WindowsLayoutSnapshot {
 
             m_snapshotTimer.Interval = (int)TimeSpan.FromMinutes(30).TotalMilliseconds;
             m_snapshotTimer.Tick += snapshotTimer_Tick;
-            m_snapshotTimer.Enabled = true;
+            m_snapshotTimer.Enabled = false;
 
             me = trayMenu;
 
-            TakeSnapshot(false);
+            
         }
 
         private void snapshotTimer_Tick(object sender, EventArgs e) {
