@@ -1,5 +1,5 @@
 ------------
-#### testx This great software has been modified
+#### testhg This great software has been modified
 * The timer for automatic periodic snapshots has been removed 
 * Program argument for starting application with 2nd icon: WindowsLayoutSnapshot.exe /Use2ndIcon
 * Added feature: Remove snapshots manually by pressing Shift and clicking on snapshot
