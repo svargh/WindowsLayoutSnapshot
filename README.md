@@ -22,3 +22,14 @@ ToDos/Features to Add:
   See also http://stackoverflow.com/questions/31801402/api-for-windows-10-virtual-desktops
   
 ------------
+
+From https://github.com/adamsmith/WindowsLayoutSnapshot/issues/8:
+Hi,
+
+I see this project is not maintained for years.
+
+But there are a lot of good forks, my suggestion is to select/create a new fork, and do all the changes from the other forks there.
+
+Then create a community and so on.
+
+See the forks here: https://techgaun.github.io/active-forks/index.html#https://github.com/adamsmith/WindowsLayoutSnapshot
